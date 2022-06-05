@@ -1,27 +1,22 @@
-# AngularNotes
+# angular-notes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
+HOW TO USE:
 
-## Development server
+1. Go to project root directory
+2. Run `mvn clean install`
+3. deploy the war file located on `/target` directory to any web server (such as Tomcat)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+PROJECT DESCRIPTION:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- The project includes Angular project setup, notes, API explaination and reference
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+FRAMEWORK/ LIBRARY FEATURES:
 
-## Running unit tests
+- **RxWebValidators** is used to simplfy form validation code such as cross field and conditional checking.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Angular Material** is used to construct attractive, consistent responsive UI.
 
-## Running end-to-end tests
+- **Transloco** is used to translate webpage content to different language. It is an internationalization (i18n) library for Angular.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

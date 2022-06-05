@@ -1,0 +1,6 @@
+{
+    "/springbootapi": {
+      "target": "http://localhost:8080/spring-boot-notes/api",
+      "secure": false
+    }
+}
