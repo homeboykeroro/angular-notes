@@ -1,6 +1,6 @@
 # angular-notes
 
-### This project is to demonstrate Angular project setup, project structure and general frontend functions. The codebase's endpoint API adheres to the repository [springbootnotes](https://github.com/gothinkster/realworld-example-apps) <br/><br/>
+### This project is to demonstrate Angular project setup, project structure and general frontend functions. The codebase's endpoint API adheres to the repository [springbootnotes](https://github.com/homeboykeroro/springbootnotes) <br/><br/>
 
 ## Thrid Party Library Adapted
 - **RxWebValidators** is used to simplfy form validation code such as cross field and conditional checking.
