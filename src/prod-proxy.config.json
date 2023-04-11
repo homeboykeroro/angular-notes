@@ -1,0 +1,7 @@
+{
+  "/endpoint": {
+    "target": "http://localhost:8080/springbootnotes/api",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
