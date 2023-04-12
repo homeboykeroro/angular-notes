@@ -9,6 +9,7 @@
 - **Moment.js** is used to simplify the use of javascript Date API
 
 ## My Own Configuration
+- Run `ng generate environments` to generate configuration files for different envrionments
 - Change `outputPath` property value to "dist" instead of "dist/[PROJECT_NAME]" in angular.json
 - Change `start` script to `ng serve --open` in package.json
 - Change `build` script to `ng build --base-href` *`/[PROJECT_NAME]/`* in package.json
@@ -16,10 +17,13 @@
 - Add the following proxy configration for endpoint API service in both dev-proxy.config.json and prod-proxy.config.json 
 ```
 {
-    "/endpoint": {
-      "target": "http://localhost:8090/springbootnotes/api",
+  "/endpoint": {
+      "target": "http://localhost:8080/springbootnotes/api",
       "secure": false,
-      "changeOrigin": true
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/endpoint": ""
+      }
     }
 }
 ```
@@ -64,8 +68,9 @@
 - `npm install @rxweb/reactive-form-validators`
 - `npm install moment --save`
 - `ng add @angular/material`
-- `ng g c components/components/home --skip-import`
-- `ng g c components/components/error --skip-import`
+- `ng generate environments`
+- `ng g c components/home --skip-import`
+- `ng g c components/error --skip-import`
 - `ng g c components/shared/layout/header --skip-import`
 - `ng g c components/shared/layout/footer --skip-import`
 

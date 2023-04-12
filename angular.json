@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-notes",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -52,19 +52,27 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-notes:build:production"
+              "browserTarget": "angular-notes:build:production",
+              "proxyConfig": "src/prod-proxy.config.json"
             },
             "development": {
-              "browserTarget": "angular-notes:build:development"
+              "browserTarget": "angular-notes:build:development",
+              "proxyConfig": "src/dev-proxy.config.json"
             }
           },
           "defaultConfiguration": "development"
